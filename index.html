@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Interactive rating component</title>
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/47932038?s=280&v=4">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="star-icon">
+                <img src="images/icon-star.svg" alt="" class="star">
+            </div>
+            <div class="question">
+                <h1>How did we do?</h1>
+            </div>
+            <div class="info">
+                <p>Please let us know we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            </div>
+            <div class="btns">
+            <button class="btn" onclick="userRatingValue='1'">1</button>
+            <button class="btn" onclick="userRatingValue='2'">2</button>
+            <button class="btn" onclick="userRatingValue='3'">3</button>
+            <button class="btn" onclick="userRatingValue='4'">4</button>
+            <button class="btn" onclick="userRatingValue='5'">5</button>
+            </div>
+            <div>
+                <button class="submitBtn">SUBMIT</button>
+            </div>
+        </div>
+        <div class="thank-you-page">
+            <img src="images/illustration-thank-you.svg" alt="" class="thank-you-img">
+            <div>
+                <p class="selected">You selected <span id="userRating"></span> out of 5</p>
+            </div>
+            <h2 class="thank-you">Thank you!</h2>
+            <p class="line-1">We appreciate you taking the time to give a rating.</p>
+            <p class="line-2">If you ever need more support,don't hestitate to get in touch!</p>
+        </div>
+        <script src="script.js"></script>
+        
+    </body>
+</html>
